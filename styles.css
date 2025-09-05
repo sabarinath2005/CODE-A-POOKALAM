@@ -1,0 +1,158 @@
+/* ✅ Base Page Setup */
+body {
+  background-color: #cdb0e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* always at least full screen height */
+  flex-direction: column;   /* stack text + design vertically */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;   /* stack elements inside */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90%;   /* keep design inside safe margins */
+  min-height: 100vh;
+  gap: 20px;
+  margin: 0 auto;   /* ✅ center horizontally always */
+  box-sizing: border-box;
+}
+
+/* Flower of Life */
+.flower-of-life {
+  position: relative;
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
+  border: 1px solid #9e802e;
+  overflow: hidden;
+  background: radial-gradient(circle, #de9b1e, #c9b30b);
+}
+
+/* ✅ Onam Text with Fluid Typography */
+.onam-text {
+  font-family: 'Verdana', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  color: #d56808;
+  text-align: center;
+  text-shadow: 2px 2px 5px #ffcc00;
+  margin: 10px 0;
+}
+
+/* Circles */
+.circle {
+  position: absolute;
+  width: 30vmin;
+  height: 30vmin;
+  border: 3px solid #893f22;
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Center Circle */
+.circle-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #ffb347, #da722d);
+  border: 3px solid #a25e5e;
+}
+
+/* Other Circles */
+.circle-1 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(0, -15vmin); }
+.circle-2 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(13vmin, -7.5vmin); }
+.circle-3 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(13vmin, 7.5vmin); }
+.circle-4 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(0, 15vmin); }
+.circle-5 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-13vmin, 7.5vmin); }
+.circle-6 { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-13vmin, -7.5vmin); }
+
+/* Rectangles (layers) */
+.rectangle {
+  width: 350px;
+  height: 350px;
+  background: #d25961;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+}
+.rect1 { transform: rotate(10deg); }
+.rect2 { transform: rotate(20deg); }
+.rect3 { transform: rotate(30deg); }
+.rect4 { transform: rotate(40deg); }
+.rect5 { transform: rotate(50deg); }
+.rect6 { transform: rotate(60deg); }
+.rect7 { transform: rotate(70deg); }
+.rect8 { transform: rotate(80deg); }
+.rect9 { transform: rotate(90deg); }
+
+/* ✅ Media Query for <= 720px */
+@media (max-width: 720px) {
+  body {
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .flower-of-life {
+    width: 70vmin;
+    height: 70vmin;
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .circle {
+    width: 22vmin;
+    height: 22vmin;
+  }
+
+  .rectangle {
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 50px;
+  }
+}
+
+/* ✅ Media Query for <= 400px (stop shrinking, enable scroll) */
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .container {
+    min-width: 400px;   /* lock design size */
+    max-width: none;
+    margin: 0 auto;     /* ✅ stays centered */
+  }
+
+  .flower-of-life {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;     /* ✅ force center */
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .rectangle {
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 50px;
+  }
+}
