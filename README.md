@@ -55,6 +55,7 @@ Edit `styles.css` (or add your own file) and bring your imagination to life.
 * Learn Git/GitHub hands-on.
 * Show off your creativity to the TinkerHub SBCE community.
 * And of course… have fun! ✨
+screenshot:<img width="987" height="793" alt="Screenshot 2025-09-05 192657" src="https://github.com/user-attachments/assets/ab92d3ab-4433-4ab2-a055-c6c4359a9a73" />
 
 ---
 
