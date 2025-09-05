@@ -64,9 +64,8 @@ Code-a-Pookalam is an imaginative and festive coding initiative—an artistic ce
 
 . Celebrate Tradition, Learn Modern Skills: The project's tagline sums it up beautifully: "Pookkalam is a timeless tradition of Onam—colorful floral patterns that    bring people together in creativity and joy. But this time, we’re mixing tradition with tech."
 
-Project link:
-. github(https://sabarinath2005.github.io/CODE-A-POOKALAM/)
-. vercel(https://code-a-pookalam-git-master-sabarinath2005s-projects.vercel.app)
+Project link:github(https://sabarinath2005.github.io/CODE-A-POOKALAM/)
+            vercel(https://code-a-pookalam-git-master-sabarinath2005s-projects.vercel.app)
 ---
 
 ## 🪷 Made with ❤️ by TinkerHub SBCE
